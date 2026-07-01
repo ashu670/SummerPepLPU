@@ -4,14 +4,12 @@ using namespace std;
 void pattern(int arr[][4]){
     int c = 0;
     for(int i = 0; i < 4; i++){
-        int r = 3;
         for(int j = 0; j < 4; j++){
             if(c == 0){
                 cout<<arr[j][i]<<" ";
             }
             else{
-                cout<<arr[r][i] << " ";
-                r--;
+                cout<<arr[3 - j][i] << " ";
             }
         }
         c = c == 0 ? 1 : 0;
