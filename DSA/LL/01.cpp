@@ -51,6 +51,11 @@ int main() {
 
     delEnd(head);
     print(head);
+    Node* curr = head;
+    curr = curr->next;
+    delete head;
+    head = curr;
+    print(head);
 
     return 0;
 }
